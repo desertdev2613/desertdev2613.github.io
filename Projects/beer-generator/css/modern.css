@@ -1,0 +1,62 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:wght@400;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('/beer-generator/image/background.jpg');
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+}
+
+.container {
+	border-radius: 50px;
+	background: #99a8f5;
+	box-shadow: 20px 20px 60px #828fd0, -20px -20px 60px #b0c1ff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 35px;
+	max-width: 600px;
+	margin: 100px 0;
+}
+
+.random-beer {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 3rem;
+	text-shadow: 2px 2px rgb(41, 41, 41);
+}
+
+.beer-button {
+	border-radius: 50%;
+	margin: 30px;
+	cursor: pointer;
+	box-shadow: 20px 20px 60px #828fd0, -20px -20px 60px #b0c1ff;
+}
+
+.description {
+	color: rgb(51, 51, 51);
+	font-size: 20px;
+	text-align: justify;
+}
+
+.pairing {
+	color: whitesmoke;
+	font-size: 20px;
+	margin-top: 40px;
+	text-align: left;
+}
