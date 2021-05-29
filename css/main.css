@@ -1,0 +1,23 @@
+:root {
+	--noMargin: 0;
+	--noPadding: 0;
+	--box-sizing: border-box;
+	--mainColor: #6a706e;
+	--textColor: #0a0a0a;
+	--lightLinkColor: #ffffff;
+}
+
+body {
+	background-color: var(--mainColor);
+	color: var(--textColor);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+a {
+	color: var(--lightLinkColor);
+	text-decoration: none;
+}
