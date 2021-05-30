@@ -1,0 +1,171 @@
+/* Global variables */
+/* Images */
+/* buttons */
+/* fonts */
+/* images */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 1.5rem;
+}
+
+img {
+  height: 90px;
+}
+
+.banner-image {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://images.unsplash.com/photo-1570439481373-4030305cb574?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1570439481373-4030305cb574?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80");
+  height: 500px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner-image .hero-text {
+  background-color: #ecf1f6;
+  opacity: 0.6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5% 10%;
+  width: 70vw;
+}
+
+.banner-image .hero-text span {
+  font-weight: bold;
+}
+
+.banner-image #navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  bottom: 30px;
+}
+
+.banner-image #navigation .hero-btn {
+  background-color: lightgray;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.banner-image #navigation a {
+  color: black;
+}
+
+.banner-image #navigation a:hover {
+  background-color: rgba(121, 185, 177, 0.603);
+  color: white;
+}
+
+@media (max-width: 50em) {
+  .banner-image #navigation {
+    display: none;
+  }
+}
+
+.menu_summary {
+  margin: 5% 20% 2% 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.menu_summary h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#smoothie_menu,
+#acai_menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 10px 10px;
+  margin: 100px;
+}
+
+.para-img1 {
+  min-height: 500px;
+  background-image: url("https://images.unsplash.com/photo-1588766391712-9999e3629bac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.para-img2 {
+  min-height: 500px;
+  background-image: url("https://images.unsplash.com/photo-1602234382521-610b2abf9029?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer h2 {
+  text-align: center;
+  margin: 5% 20% 2% 20%;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer span {
+  font-weight: bold;
+}
+
+footer iframe {
+  margin-top: 30px;
+}
+/*# sourceMappingURL=main.css.map */
