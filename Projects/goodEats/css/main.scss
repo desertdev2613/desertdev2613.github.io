@@ -54,6 +54,7 @@ img {
 		align-items: center;
 		padding: 5% 10%;
 		width: 70vw;
+		text-align: center;
 
 		span {
 			font-weight: bold;
@@ -123,14 +124,33 @@ img {
 #smoothie_menu,
 #acai_menu {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, (minmax(300px, 1fr)));
+	grid-template-columns: repeat(auto-fit, (minmax(200px, 1fr)));
 	grid-gap: 100px 50px;
 	margin: 100px;
+
+	@media (min-width: 1136px) {
+		grid-template-columns: repeat(auto-fit, (minmax(300px, 1fr)));
+	}
 }
 
-.menu-img {
-	position: relative;
-	left: 80%;
+.menu-item {
+	.price {
+		font-weight: bold;
+		position: relative;
+		top: 60px;
+	}
+
+	.menu-img {
+		position: relative;
+		left: 60%;
+	}
+
+	@media (max-width: 414px) {
+		.menu-img {
+			position: relative;
+			left: 70%;
+		}
+	}
 }
 
 .para-img1 {
@@ -149,6 +169,7 @@ img {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	width: 100%;
 }
 
 footer {

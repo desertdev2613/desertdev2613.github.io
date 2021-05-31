@@ -65,11 +65,12 @@ const smoothie_section = document.getElementById('smoothie_menu');
 function displaySmoothieOptions(menuItems) {
     let displayMenu = menuItems.map(function (item) {
        return  `<div class="menu-item">
-          <img src=${item.image_url} alt="smoothie" class="menu-img">
-          <div class="menu-item-info">
-            <h4>${item.name}<span>${item.price}</span></h4>
-            <p>${item.description}</p>
-          </div>
+                <p><span class="price">${item.price}</span></p>
+                <img src=${item.image_url} alt="smoothie" class="menu-img">
+                <div class="menu-item-info">
+                <h4>${item.name}</h4>
+                <p>${item.description}</p>
+                </div>
         </div>`
     });
     displayMenu = displayMenu.join('');
@@ -144,9 +145,10 @@ const acai_section = document.getElementById('acai_menu');
 function displayBowlOptions(menuItems) {
     let displayMenu = menuItems.map(function (item) {
        return  `<div class="menu-item">
+            <p><span class="price">${item.price}</span></p>
           <img src=${item.image_url} alt="bowl" class="menu-img">
           <div class="menu-item-info">
-            <h4>${item.name}<span>${item.price}</span></h4>
+            <h4>${item.name}</h4>
             <p>${item.description}</p>
           </div>
         </div>`
@@ -160,4 +162,4 @@ displayBowlOptions(acai_bowls);
 // Smooth Scroll 
 const scroll = new SmoothScroll('#navigation a[href*="#"]', {
     speed:900
-});
+}); 

@@ -59,6 +59,7 @@ img {
           align-items: center;
   padding: 5% 10%;
   width: 70vw;
+  text-align: center;
 }
 
 .banner-image .hero-text span {
@@ -141,15 +142,36 @@ img {
 #acai_menu {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 100px 50px;
   margin: 100px;
 }
 
-.menu-img {
+@media (min-width: 1136px) {
+  #smoothie_menu,
+  #acai_menu {
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+.menu-item .price {
+  font-weight: bold;
   position: relative;
-  left: 80%;
+  top: 60px;
+}
+
+.menu-item .menu-img {
+  position: relative;
+  left: 60%;
+}
+
+@media (max-width: 414px) {
+  .menu-item .menu-img {
+    position: relative;
+    left: 70%;
+  }
 }
 
 .para-img1 {
@@ -168,6 +190,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 footer h2 {
