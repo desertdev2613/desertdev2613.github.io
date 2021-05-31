@@ -14,7 +14,6 @@ $btn-padding: 15px;
 $overall-font-size: 1.5rem;
 $h1-font-size: 2.5rem;
 $h2-font-size: 3rem;
-$h3-font-size: 1.5rem;
 
 /* images */
 $icon-size: 90px;
@@ -58,6 +57,17 @@ img {
 
 		span {
 			font-weight: bold;
+		}
+
+		.icons {
+			display: flex;
+			justify-content: space-evenly;
+			width: 40%;
+			margin-top: 20px;
+
+			.material-icons-outlined {
+				color: rgba(3, 104, 92, 0.877);
+			}
 		}
 	}
 
@@ -104,14 +114,23 @@ img {
 		text-align: center;
 		margin-bottom: 30px;
 	}
+
+	p {
+		color: rgba(3, 104, 92, 0.877);
+	}
 }
 
 #smoothie_menu,
 #acai_menu {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, (minmax(400px, 1fr)));
-	grid-gap: 10px 10px;
+	grid-template-columns: repeat(auto-fit, (minmax(300px, 1fr)));
+	grid-gap: 100px 50px;
 	margin: 100px;
+}
+
+.menu-img {
+	position: relative;
+	left: 80%;
 }
 
 .para-img1 {
@@ -142,6 +161,11 @@ footer {
 		display: flex;
 		list-style: none;
 		justify-content: space-evenly;
+
+		@media (max-width: 720px) {
+			flex-direction: column;
+			text-align: center;
+		}
 	}
 
 	span {
