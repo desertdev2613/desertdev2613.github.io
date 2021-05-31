@@ -1,3 +1,6 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Raleway:wght@100&display=swap");
 /* Global variables */
 /* Images */
 /* buttons */
@@ -12,10 +15,16 @@
 
 body {
   font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
 }
 
 img {
   height: 90px;
+}
+
+h1,
+h2 {
+  font-family: "Limelight", cursive;
 }
 
 .banner-image {
@@ -81,6 +90,10 @@ img {
   color: rgba(3, 104, 92, 0.877);
 }
 
+.banner-image .hero-text .icons .material-icons-outlined:hover {
+  color: black;
+}
+
 .banner-image #navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,7 +148,7 @@ img {
 }
 
 .menu_summary p {
-  color: rgba(3, 104, 92, 0.877);
+  color: rgba(3, 103, 149, 0.877);
 }
 
 #smoothie_menu,
